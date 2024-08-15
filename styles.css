@@ -24,10 +24,10 @@ h1 {
 
 header {
     width: 100%;
-    padding: 20px;
+    padding: 30px 40px; /* Adjust padding for more space from the top and right */
     display: flex;
     justify-content: flex-end;
-    align-items: center; /* Ensures that items are centered vertically */
+    align-items: center;
 }
 
 .menu-container {
@@ -51,8 +51,8 @@ header {
 .menu {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 60px; /* Adjust this value to position the dropdown correctly */
-    right: 20px;
+    top: 70px; /* Adjust this value to position the dropdown correctly below the header */
+    right: 40px; /* Align with the right padding */
     background-color: black;
     border: 1px solid white;
     padding: 10px;
@@ -79,6 +79,7 @@ header {
 .menu ul li a:hover {
     text-decoration: underline;
 }
+
 
 /* HOME SECTION */
 
