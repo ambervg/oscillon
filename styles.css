@@ -21,8 +21,8 @@ header {
     color: white; /* Ensures the link itself is white */
     font-size: 2em;
     text-decoration: none; /* Removes the underline that might appear for links */
-    margin-right: 50px; /* Adjusts distance from the right edge */
-}
+    margin-top: 40px; /* Adds distance from the top */
+    margin-right: 50px; /* Adds distance from the right */}
 
 .home-icon i {
     color: white; /* Ensures the icon is white */
