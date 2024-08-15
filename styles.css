@@ -161,15 +161,23 @@ h1 {
 
 /* PARTICIPANT SECTION */
 
+.participant-title {
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 20px; /* Add some space below the title */
+    text-align: center; /* Center the title if needed */
+}
+
 .participant-image {
+    display: block; /* Ensures the image starts on a new line */
     max-width: 50%;
     height: auto;
-    border-radius: 10px;
-    border: 2px solid white;
-    margin-bottom: 20px;
+    border-radius: 10px; /* Keeps the rounded corners */
+    margin: 0 auto 20px; /* Centers the image and adds space below it */
 }
 
 .coming-soon-text {
     font-size: 1.5em;
     color: white;
+    text-align: center; /* Center the text if needed */
 }
