@@ -25,8 +25,8 @@ header {
     font-size: 2em;
     cursor: pointer;
     user-select: none;
-    margin-top: 10px; /* Adds distance from the top */
-    margin-right: 20px; /* Adds distance from the right */
+    margin-top: 40px; /* Adds distance from the top */
+    margin-right: 50px; /* Adds distance from the right */
 }
 
 .menu {
@@ -72,7 +72,7 @@ h1 {
 }
 
 .event-image {
-    max-height: 90%;
+    max-height: 70%;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
