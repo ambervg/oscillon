@@ -18,10 +18,10 @@ header {
 }
 
 .home-icon {
-    color: white;
+    color: white; /* Ensures the link itself is white */
     font-size: 2em;
-    text-decoration: none;
-    margin-right: 30px; /* Adjust distance from the right edge */
+    text-decoration: none; /* Removes the underline that might appear for links */
+    margin-right: 50px; /* Adjusts distance from the right edge */
 }
 
 .home-icon i {
@@ -48,7 +48,7 @@ header {
 .menu {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 70px;
+    top: 100px;
     right: 0;
     background-color: black;
     border: 1px solid white;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .event-image {
-    max-height: 50%;
+    max-height: 30%;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
