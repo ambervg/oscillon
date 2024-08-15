@@ -6,11 +6,9 @@ This repository contains the code for creating a website for the Oscillon event.
 
 You can visit the website at: [Oscillon Event Website](https://ambervg.github.io/oscillon)
 
-## About the Oscillon Event
+## About Oscillon
 
-![Oscillon Event](oscillon.jpg)
-
-The Oscillon event is a competition where participants can explore the overlap of Art and Technology by working on a project within the theme of "Human Connection through Technology". There is possiblity to explore and aquire new skills, to share knowledge and to grow together.
+Oscillon is a competition where participants can explore the overlap of Art and Technology by working on a project within the theme of "Human Connection through Technology". There is possiblity to explore and aquire new skills, to share knowledge and to grow together.
 
 ## Sections
 

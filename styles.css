@@ -92,36 +92,38 @@ header {
     margin-top: 20px;
 }
 
-/* ABOUT SECTION  */
+/* ABOUT SECTION */
 
 .about-section {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .about-content {
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .about-text {
-    flex: 1;
-    padding: 20px;
+    flex: 0 1 20%; /* Set the max width of the text to 20% of the container */
+    padding: 10px; /* Reduce padding to bring the text and image closer */
+    text-align: left; /* Left-align the text */
+    margin-right: 20px; /* Space between text and image */
 }
 
 .about-image {
-    flex: 1;
-    padding: 20px;
+    flex: 0 1 40%; /* Allow the image to take up more space if needed */
+    padding: 10px; /* Reduce padding to bring the text and image closer */
     text-align: center;
 }
 
 .about-image img {
-    max-width: 50%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
     border: 2px solid white;
 }
@@ -145,14 +147,14 @@ header {
     .about-content {
         flex-direction: column;
     }
-    .left, .right {
+    /* .left, .right {
         order: unset;
-    }
-    .about-image {
-        padding: 10px;
-    }
-    .about-text {
-        padding: 10px;
+    } */
+    .about-text, .about-image {
+        flex: 1 1 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 0; /* Remove margin to align everything vertically */
+        text-align: center; /* Center-align text on smaller screens */
     }
 }
 
