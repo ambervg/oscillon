@@ -33,6 +33,7 @@ header {
 .menu-container {
     display: flex;
     align-items: center; /* Ensures both icons are aligned vertically */
+    margin-right: 40px;
 }
 
 .home-icon {
