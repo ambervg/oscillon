@@ -17,6 +17,22 @@ header {
     padding: 20px;
 }
 
+.home-icon {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    margin-right: 30px; /* Adjust distance from the right edge */
+}
+
+.home-icon i {
+    color: white; /* Ensures the icon is white */
+    transition: color 0.3s ease; /* Adds a hover effect */
+}
+
+.home-icon i:hover {
+    color: #ddd; /* Lightens the icon on hover */
+}
+
 .menu-container {
     position: relative;
 }
