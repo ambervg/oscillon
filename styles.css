@@ -162,7 +162,7 @@ h1 {
 /* PARTICIPANT SECTION */
 
 .participant-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
