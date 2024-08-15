@@ -17,44 +17,36 @@ header {
     padding: 20px;
 }
 
-.home-icon {
-    color: white; /* Ensures the link itself is white */
-    font-size: 2em;
-    text-decoration: none; /* Removes the underline that might appear for links */
-    margin-top: 40px; /* Adds distance from the top */
-    margin-right: 50px; /* Adds distance from the right */}
-
-.home-icon i {
-    color: white; /* Ensures the icon is white */
-    transition: color 0.3s ease; /* Adds a hover effect */
-}
-
-.home-icon i:hover {
-    color: #ddd; /* Lightens the icon on hover */
-}
-
 .menu-container {
+    display: flex;
+    align-items: center;
     position: relative;
+}
+
+.home-icon {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    margin-right: 20px; /* Adds space between the home icon and the hamburger menu */
 }
 
 .hamburger-menu {
     font-size: 2em;
     cursor: pointer;
     user-select: none;
-    margin-top: 40px; /* Adds distance from the top */
-    margin-right: 50px; /* Adds distance from the right */
+    margin-right: 30px; /* Adjusts distance from the right edge */
 }
 
 .menu {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 100px;
+    top: 40px;
     right: 0;
     background-color: black;
     border: 1px solid white;
     padding: 10px;
     z-index: 1;
-    width: 200px; /* Increases the width of the dropdown menu */
+    width: 200px; /* Width of the dropdown menu */
 }
 
 .menu ul {
@@ -170,7 +162,7 @@ h1 {
 
 .participant-image {
     display: block; /* Ensures the image starts on a new line */
-    max-width: 50%;
+    max-width: 75%;
     height: auto;
     border-radius: 10px; /* Keeps the rounded corners */
     margin: 0 auto 20px; /* Centers the image and adds space below it */
