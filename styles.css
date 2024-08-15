@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black; /* Sets the background color to black */
+    color: white; /* Sets the text color to white */
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.menu-container {
+    position: relative;
+}
+
+.hamburger-menu {
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 4em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
