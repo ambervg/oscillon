@@ -10,38 +10,49 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.container {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 4em; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+/* HEADER STYLES */
+
 header {
     width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
+    align-items: center; /* Ensures that items are centered vertically */
 }
 
 .menu-container {
     display: flex;
-    align-items: center;
-    position: relative;
+    align-items: center; /* Ensures both icons are aligned vertically */
 }
 
 .home-icon {
     color: white;
     font-size: 2em;
     text-decoration: none;
-    margin-right: 20px; /* Adds space between the home icon and the hamburger menu */
+    margin-right: 20px; /* Space between the home icon and the hamburger menu */
 }
 
 .hamburger-menu {
     font-size: 2em;
     cursor: pointer;
     user-select: none;
-    margin-right: 30px; /* Adjusts distance from the right edge */
 }
 
 .menu {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 40px;
-    right: 0;
+    top: 60px; /* Adjust this value to position the dropdown correctly */
+    right: 20px;
     background-color: black;
     border: 1px solid white;
     padding: 10px;
@@ -69,15 +80,7 @@ header {
     text-decoration: underline;
 }
 
-.container {
-    text-align: center;
-    flex: 1;
-}
-
-h1 {
-    font-size: 4em; /* Adjust the font size as needed */
-    margin-bottom: 20px;
-}
+/* HOME SECTION */
 
 .event-image {
     max-height: 50%;
