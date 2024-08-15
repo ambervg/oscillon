@@ -25,6 +25,8 @@ header {
     font-size: 2em;
     cursor: pointer;
     user-select: none;
+    margin-top: 10px; /* Adds distance from the top */
+    margin-right: 20px; /* Adds distance from the right */
 }
 
 .menu {
@@ -36,6 +38,7 @@ header {
     border: 1px solid white;
     padding: 10px;
     z-index: 1;
+    width: 200px; /* Increases the width of the dropdown menu */
 }
 
 .menu ul {
@@ -69,7 +72,7 @@ h1 {
 }
 
 .event-image {
-    max-width: 100%;
+    max-height: 90%;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
