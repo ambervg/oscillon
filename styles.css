@@ -88,9 +88,74 @@ h1 {
 }
 
 .event-image {
-    max-height: 30%;
+    max-height: 50%;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
     margin-top: 20px;
 }
+
+/* ABOUT SECTION  */
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.left {
+    order: 1;
+}
+
+.right {
+    order: 2;
+}
+
+.section-divider {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .left, .right {
+        order: unset;
+    }
+    .about-image {
+        padding: 10px;
+    }
+    .about-text {
+        padding: 10px;
+    }
+}
+
