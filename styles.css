@@ -32,7 +32,7 @@ header {
 .menu {
     display: none; /* Hidden by default */
     position: absolute;
-    top: 40px;
+    top: 70px;
     right: 0;
     background-color: black;
     border: 1px solid white;
@@ -72,7 +72,7 @@ h1 {
 }
 
 .event-image {
-    max-height: 70%;
+    max-height: 50%;
     height: auto;
     border: 2px solid white;
     border-radius: 10px;
