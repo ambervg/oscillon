@@ -41,7 +41,6 @@
     font-style: italic;
 }
 
-/* Add other font weights/styles as needed */
 @font-face {
     font-family: 'Barlow Condensed';
     src: url('fonts/Barlow_Condensed/BarlowCondensed-Light.ttf') format('truetype');
@@ -67,7 +66,7 @@ body {
     align-items: center;
     background-color: black; /* Sets the background color to black */
     color: white; /* Sets the text color to white */
-    font-family: Arial, sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 .container {
@@ -223,28 +222,47 @@ header {
 
 /* PARTICIPANT SECTION */
 
-.participant-title {
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 20px; /* Add some space below the title */
-    text-align: center; /* Center the title if needed */
+.participants-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items at the top */
+    margin-top: 40px;
 }
 
-.participant-image {
-    display: block; /* Ensures the image starts on a new line */
-    max-width: 75%;
+.participants-image {
+    max-width: 45%; /* Adjust to your preferred width */
     height: auto;
-    border-radius: 10px; /* Keeps the rounded corners */
-    margin: 0 auto 20px; /* Centers the image and adds space below it */
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
-.coming-soon-text {
-    font-size: 1.5em;
+.participants-right-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%; /* Adjust as necessary */
+    margin-left: 20px;
+    text-align: left; /* Aligns the text to the left */
+}
+
+.participants-interest-form {
+    background-color: #222; /* Dark background to match the theme */
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-    text-align: center; /* Center the text if needed */
+    margin-bottom: 20px; /* Space between form and "coming soon" text */
 }
 
-.form-link {
+.participants-interest-form h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+.participants-interest-form p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.participants-form-link {
     display: inline-block;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -252,10 +270,34 @@ header {
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
-    text-align: center;
+}
+
+.participants-form-link:hover {
+    background-color: #45a049;
+}
+
+.participants-coming-soon-text {
+    font-size: 1.5em;
+    color: white;
     margin-top: 20px;
 }
 
-.form-link:hover {
-    background-color: #45a049;
+/* Responsive adjustments specific to Participants page */
+@media (max-width: 768px) {
+    .participants-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .participants-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .participants-right-content {
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    .participants-interest-form, .participants-coming-soon-text {
+        width: 100%;
+    }
 }
