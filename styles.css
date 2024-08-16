@@ -227,7 +227,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 40px;
-    padding: 0 20px; /* Adds padding to the left and right */
+    padding: 0 50px; /* Adds padding to the left and right */
 }
 
 .participants-image {
@@ -249,7 +249,6 @@ header {
 }
 
 .participants-interest-form {
-    background-color: #222;
     padding: 20px;
     border-radius: 10px;
     color: white;
