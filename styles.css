@@ -116,13 +116,14 @@ header {
 }
 
 .about-image {
-    flex: 0 1 40%; /* Allow the image to take up more space if needed */
+    flex: 0 1 20%; /* Allow the image to take up more space if needed */
     padding: 10px; /* Reduce padding to bring the text and image closer */
-    text-align: center;
+    /* text-align: center; */
 }
 
 .about-image img {
     max-width: 100%;
+    max-height: 50%;
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
