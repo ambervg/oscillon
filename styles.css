@@ -225,35 +225,35 @@ header {
 .participants-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Aligns items at the top */
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    align-items: flex-start;
     margin-top: 40px;
+    padding: 0 20px; /* Adds padding to the left and right */
 }
 
 .participants-image {
-    flex: 0 1 45%; /* Flexibly allows the image to take up 45% of the container's width */
-    max-width: 45%; /* Maximum width of the image */
+    flex: 0 1 55%; /* Flexibly allows the image to take up 55% of the container's width */
+    max-width: 55%; /* Maximum width of the image */
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
 }
 
 .participants-right-content {
-    flex: 0 1 50%; /* Flexibly allows the right content to take up 50% of the container's width */
-    max-width: 50%; /* Maximum width of the right content */
+    flex: 0 1 40%; /* Flexibly allows the right content to take up 40% of the container's width */
+    max-width: 40%; /* Maximum width of the right content */
     margin-left: 20px;
-    text-align: left; /* Aligns the text to the left */
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .participants-interest-form {
-    background-color: #222; /* Dark background to match the theme */
+    background-color: #222;
     padding: 20px;
     border-radius: 10px;
     color: white;
-    margin-bottom: 20px; /* Space between form and "coming soon" text */
+    margin-bottom: 20px;
 }
 
 .participants-interest-form h2 {
@@ -277,7 +277,7 @@ header {
 }
 
 .participants-form-link:hover {
-    background-color: #333333;
+    background-color: #2e2e2e;
 }
 
 .participants-coming-soon-text {
@@ -291,6 +291,7 @@ header {
     .participants-content {
         flex-direction: column;
         align-items: center;
+        padding: 0; /* Remove side padding on small screens */
     }
     .participants-image {
         max-width: 100%;
@@ -305,3 +306,4 @@ header {
         width: 100%;
     }
 }
+
