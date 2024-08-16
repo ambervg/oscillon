@@ -226,22 +226,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
     margin-top: 40px;
 }
 
 .participants-image {
-    max-width: 45%; /* Adjust to your preferred width */
+    flex: 0 1 45%; /* Flexibly allows the image to take up 45% of the container's width */
+    max-width: 45%; /* Maximum width of the image */
     height: auto;
     border-radius: 10px;
     border: 2px solid white;
 }
 
 .participants-right-content {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%; /* Adjust as necessary */
+    flex: 0 1 50%; /* Flexibly allows the right content to take up 50% of the container's width */
+    max-width: 50%; /* Maximum width of the right content */
     margin-left: 20px;
     text-align: left; /* Aligns the text to the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .participants-interest-form {
@@ -265,7 +269,7 @@ header {
 .participants-form-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -273,7 +277,7 @@ header {
 }
 
 .participants-form-link:hover {
-    background-color: #45a049;
+    background-color: #333333;
 }
 
 .participants-coming-soon-text {
