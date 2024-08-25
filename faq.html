@@ -6,7 +6,6 @@
     <title>FAQ - Project Oscillon</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,7 +32,7 @@
         <h1>Frequently Asked Questions</h1>
 
         <div class="faq-container">
-            <p>Registration</p>
+            <h2>Registration</h2>
             <div class="faq-item">
                 <div class="faq-question">
                     <span>Who can be a participant?</span>
@@ -45,7 +44,7 @@
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Do I already need to have a team to partiipate?</span>
+                    <span>Do I already need to have a team to participate?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
@@ -71,7 +70,7 @@
                 </div>
             </div>
             
-            <p>Logistics</p>
+            <h2>Logistics</h2>
             <div class="faq-item">
                 <div class="faq-question">
                     <span>Are there any mandatory moments that I need to be present?</span>
@@ -83,7 +82,7 @@
             </div>
 
             
-            <p>Updates</p>
+            <h2>Updates</h2>
             <div class="faq-item">
                 <div class="faq-question">
                     <span>How can I stay updated on Project Oscillon?</span>
@@ -97,18 +96,7 @@
 
         </div>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const faqItems = document.querySelectorAll('.faq-item');
-
-            faqItems.forEach(item => {
-                const question = item.querySelector('.faq-question');
-                question.addEventListener('click', () => {
-                    item.classList.toggle('active');
-                });
-            });
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
 
