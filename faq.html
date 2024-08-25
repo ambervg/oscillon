@@ -32,10 +32,83 @@
     <div class="container">
         <h1>Frequently Asked Questions</h1>
 
-        <!-- Horizontal Line
-        <hr class="section-divider"> -->
+        <div class="faq-container">
+            <p>Registration</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Who can be a participant?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Project Oscillon is aimed at students with an interest in robotics, human-robot interaction, tech-art, and human connection. There are no specific requirements regarding the year of study, and non-students are also welcome to join teams.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I already need to have a team to partiipate?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, you do not need to have a team to participate. You can register as an individual, and if possible, we will help create teams from solo applications.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do I need prior experience in robotics or art to participate?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No prior experience in robotics or art is required to participate in Project Oscillon. We encourage individuals from all backgrounds to join, as we believe that diverse perspectives lead to the most innovative ideas. Whether you're a beginner or an expert, there’s a place for you in the project.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can teams consist of multiple backgrounds?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We encourage teams to consist of members from diverse backgrounds. Teams that bring together different perspectives—whether from engineering, art, design, or social sciences—tend to create the most innovative and well-rounded projects.</p>
+                </div>
+            </div>
+            
+            <p>Logistics</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Are there any mandatory moments that I need to be present?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, there are a few mandatory moments throughout the project. For the big finale event we require all teams to be represented. For the workshops you can select the ones that are of interest to your and your project, these are non-mandatory. </p>
+                </div>
+            </div>
 
-        <p>FAQ for Project Oscillon. Coming soon...</p>
+            
+            <p>Updates</p>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How can I stay updated on Project Oscillon?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We have a Discord channel, which we will use as our main communication channel.</p>
+                </div>
+            </div>
+            
+
+        </div>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
