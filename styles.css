@@ -357,3 +357,71 @@ header {
     transform: rotate(180deg);
 }
 
+/* INSPIRATION SECTION */
+
+.intro-box {
+    background-color: #141414;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.inspiration-board {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 80%; /* Make the inspiration board less wide */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inspiration-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inspiration-visual {
+    flex: 0 0 700px; /* Set a fixed width for the visual container */
+    width: 700px; /* Ensures all visuals are the same width */
+}
+
+.inspiration-visual img {
+    width: 100%; /* Make sure the image fills the visual container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.inspiration-visual img:hover {
+    transform: scale(1.05);
+}
+
+.inspiration-text {
+    flex: 1;
+    padding: 15px;
+}
+
+.inspiration-text h2 {
+    margin: 0;
+    color: white; 
+}
+
+.inspiration-text a {
+    color: white;
+    text-decoration: none;
+}
+
+.inspiration-text a:hover {
+    text-decoration: underline;
+}
+
+.inspiration-text p {
+    margin: 10px 0 0;
+    line-height: 1.6;
+}

@@ -1,3 +1,4 @@
+// Hamburger menu 
 document.getElementById('hamburger-menu').addEventListener('click', function() {
     const menu = document.getElementById('menu');
     if (menu.style.display === 'block' || menu.style.display === '') {
@@ -7,6 +8,7 @@ document.getElementById('hamburger-menu').addEventListener('click', function() {
     }
 });
 
+// Toggle buttons FAQ page
 document.addEventListener('DOMContentLoaded', () => {
     const faqItems = document.querySelectorAll('.faq-item');
 
@@ -29,3 +31,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// // Hover effect
+// document.addEventListener('DOMContentLoaded', () => {
+//     const items = document.querySelectorAll('.inspiration-item');
+
+//     items.forEach(item => {
+//         item.addEventListener('mouseover', () => {
+//             item.style.backgroundColor = '#e0e0e0';
+//         });
+
+//         item.addEventListener('mouseout', () => {
+//             item.style.backgroundColor = '#f4f4f4';
+//         });
+//     });
+// });
