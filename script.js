@@ -32,17 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// // Hover effect
-// document.addEventListener('DOMContentLoaded', () => {
-//     const items = document.querySelectorAll('.inspiration-item');
 
-//     items.forEach(item => {
-//         item.addEventListener('mouseover', () => {
-//             item.style.backgroundColor = '#e0e0e0';
-//         });
+document.addEventListener("DOMContentLoaded", function() {
+    const board = document.getElementById('inspiration-board');
+    const items = Array.from(board.children);
+    
+    // Function to shuffle the array
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
 
-//         item.addEventListener('mouseout', () => {
-//             item.style.backgroundColor = '#f4f4f4';
-//         });
-//     });
-// });
+    // Shuffle the items
+    const shuffledItems = shuffle(items);
+
+    // Remove all items from the board and re-append them in the new order
+    board.innerHTML = "";
+    shuffledItems.forEach(item => board.appendChild(item));
+});
+

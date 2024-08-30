@@ -6,6 +6,11 @@ This repository contains the code for creating a website for the Oscillon event.
 
 You can visit the website at: [Oscillon Event Website](https://ambervg.github.io/oscillon)
 
+To run the website locally:
+```
+python3 -m http.server 8000
+```
+
 ## About Oscillon
 
 Oscillon is a competition where participants can explore the overlap of Art and Technology by working on a project within the theme of "Human Connection through Technology". There is possiblity to explore and aquire new skills, to share knowledge and to grow together.
