@@ -8,7 +8,7 @@ You can visit the website at: [Oscillon Event Website](https://ambervg.github.io
 
 To run the website locally:
 ```
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
 ## About Oscillon
