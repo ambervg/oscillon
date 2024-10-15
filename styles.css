@@ -243,6 +243,20 @@ header {
     width: 100%; /* Takes up full width */
 }
 
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    /* .left, .right {
+        order: unset;
+    } */
+    .organizer-text, .organizer-image {
+        flex: 1 1 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 0; /* Remove margin to align everything vertically */
+        text-align: center; /* Center-align text on smaller screens */
+    }
+}
 
 /* Styling for the Involved Artists and Scientists Section */
 .involved {
@@ -266,6 +280,21 @@ header {
     height: auto; /* Keeps the aspect ratio intact */
     border-radius: 50%; /* Optional: makes images circular */
     margin: 10px; /* Adds some space around the image */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    /* .left, .right {
+        order: unset;
+    } */
+    .involved-text, .involved-image {
+        flex: 1 1 100%;
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 0; /* Remove margin to align everything vertically */
+        text-align: center; /* Center-align text on smaller screens */
+    }
 }
 
 /* PARTICIPANT SECTION */
