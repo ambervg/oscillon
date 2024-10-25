@@ -233,7 +233,7 @@ header {
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center the items */
     margin-bottom: 40px; /* Adds space between bios */
-    width: 80%; /* Optional: Constrain width for better readability */
+    width: 20%; /* Optional: Constrain width for better readability */
     margin: 0 auto; /* Center the content horizontally */
 }
 
@@ -264,7 +264,7 @@ header {
     flex-direction: column; /* Stack image and text vertically */
     align-items: center; /* Center the items */
     margin-bottom: 40px; /* Adds space between bios */
-    width: 80%; /* Optional: Constrain width for better readability */
+    width: 20%; /* Optional: Constrain width for better readability */
     margin: 0 auto; /* Center the content horizontally */
 }
 
